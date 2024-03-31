@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header>
+        <h1>STUDENT's Choise</h1>
+        <span>Designed by:ugurysfzd</span>
+    </header>
+    <main>
+        
+    <div class="calculator">
+        <input type="text" id="display" readonly>
+        <div class="buttons">
+            <button onclick="calculateSquareRoot()" class="operator">√</button>
+            <button onclick="calculateFactorial()" class="operator">!</button>
+            <button onclick="appendOperator('**')" class="operator">^</button>
+            <button onclick="clearDisplay()" class="clear">C</button>
+
+            <button onclick="appendNumber(7)">7</button>
+            <button onclick="appendNumber(8)">8</button>
+            <button onclick="appendNumber(9)">9</button>
+            <button onclick="appendOperator('/')" class="fixed-btn">/</button>
+
+            <button onclick="appendNumber(4)">4</button>
+            <button onclick="appendNumber(5)">5</button>
+            <button onclick="appendNumber(6)">6</button>
+            <button onclick="appendOperator('*')" class="fixed-btn">*</button>
+
+
+            <button onclick="appendNumber(1)">1</button>
+            <button onclick="appendNumber(2)">2</button>
+            <button onclick="appendNumber(3)">3</button>
+            <button onclick="appendOperator('-')" class="fixed-btn">-</button>
+
+            <button onclick="appendNumber(0)">0</button>
+            <button onclick="appendDot()">.</button>
+            <button onclick="calculateResult()" class="fixed-btn">=</button>
+            <button onclick="appendOperator('+')" class="fixed-btn">+</button>
+
+
+        </div>
+    </div>
+    
+    </main>
+    <footer>
+        <ul>
+            <li class="li1">Instagram</li>
+            <li class="li2">Tik-Tok</li>
+            <li class="li3">Twitter(X)</li>
+            <li class="li4">GitHub</li>
+        </ul>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
